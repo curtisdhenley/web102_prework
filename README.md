@@ -1,6 +1,6 @@
 # WEB102 Prework - *CrowdPlay Chronicles*
 
-Submitted by: **Curtis Henley**
+Submitted by: [**Curtis Henley**](https://curtishenley.dev/)
 
 **CrowdPlay Chronicles** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
@@ -30,7 +30,7 @@ It was a good refresher on Javascript built in functions
 
 ## License
 
-    Copyright [2024] [Curtis Henley](https://curtishenley.dev/)
+    Copyright 2024 Curtis Henley
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
