@@ -153,13 +153,11 @@ let unfundedGames = GAMES_JSON.filter((GAMES_JSON) => {
 
 // create a string that explains the number of unfunded games using the ternary operator
 const displayStr = `${unfundedGames.length > 0 ? "Currently, over $800,000 has been raised for 11 games. As of right now, 7 games remain unfunded. We need your help to fund these amazing games!" : "All games have been funded!"}`;
-console.log(displayStr);
 
 // create a new DOM element containing the template string and append it to the description container
-let descriptionDiv = document.createElement("div");
-descriptionDiv.innerHTML = `
-<p>${displayStr}</p>`;
-descriptionContainer.appendChild(descriptionDiv);
+let descriptionString = document.createElement("p");
+descriptionString.innerHTML = `<p>${displayStr}</p>`;
+descriptionContainer.appendChild(descriptionString);
 
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
@@ -174,7 +172,15 @@ const sortedGames = GAMES_JSON.sort((item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+const [firstTopGame, secondTopGame, ...rest] = sortedGames;
+console.log(`First Place: ${firstTopGame.name}, Second Place: ${secondTopGame.name}`)
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const firstPlaceGame = document.createElement("p");
+firstPlaceGame.innerHTML = firstTopGame.name;
+firstGameContainer.appendChild(firstPlaceGame);
 
 // do the same for the runner up item
+const secondPlaceGame = document.createElement("p");
+secondPlaceGame.innerHTML = secondTopGame.name;
+secondGameContainer.appendChild(secondPlaceGame);
