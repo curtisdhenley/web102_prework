@@ -30,7 +30,7 @@ It was a good refresher on Javascript built in functions
 
 ## License
 
-    Copyright 2024 Curtis Henley
+    Copyright [2024] [Curtis Henley](https://curtishenley.dev/)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
